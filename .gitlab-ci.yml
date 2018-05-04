@@ -14,11 +14,9 @@ cache:
 build:
   stage: deploy
   script:
-    - echo "deb http://toolbelt.heroku.com/ubuntu ./" > /etc/apt/sources.list.d/heroku.list
-    - wget -O- https://toolbelt.heroku.com/apt/release.key | apt-key add -
-    - apt-get update
-    - apt-get install -y heroku-toolbelt
-    - export HEROKU_API_KEY=HEROKU_API_KEY
+    - git checkout -b master
+    - git commit -m "Test pushing to Heroku at $(date)"
+    - git branch -v
     - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/museum-art.git master
   only:
     - master
