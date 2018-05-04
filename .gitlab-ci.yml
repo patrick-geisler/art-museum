@@ -11,7 +11,7 @@ cache:
 #   script:
 #     - npm run lint
 
-publish:
+build:
   stage: deploy
   script:
     - npm run build
