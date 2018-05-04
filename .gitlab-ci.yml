@@ -14,5 +14,4 @@ cache:
 build:
   stage: deploy
   script:
-    - npm run build
     - npm run start
