@@ -14,6 +14,8 @@ cache:
 build:
   stage: deploy
   script:
+    - git config --global user.email "geislerpatrick@gmail.com"
+    - git config --global user.name "Patrick Geisler"
     - git checkout -b test-push-heroku
     - git commit -m "Test pushing to Heroku at $(date)"
     - git branch -v
