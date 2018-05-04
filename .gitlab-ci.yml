@@ -14,7 +14,7 @@ cache:
 build:
   stage: deploy
   script:
-    - git checkout -b master
+    - git checkout -b test-push-heroku
     - git commit -m "Test pushing to Heroku at $(date)"
     - git branch -v
     - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/museum-art.git master
