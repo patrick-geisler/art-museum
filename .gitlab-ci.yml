@@ -1,0 +1,18 @@
+image: node:6
+
+before_script:
+  - npm install
+
+cache:
+  paths:
+    - node_modules/
+
+test:lint:
+  script:
+    - npm run lint
+
+publish:
+  stage: deploy
+  script:
+    - npm run build
+    - npm run start
