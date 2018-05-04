@@ -7,9 +7,9 @@ cache:
   paths:
     - node_modules/
 
-test:lint:
-  script:
-    - npm run lint
+# test:lint:
+#   script:
+#     - npm run lint
 
 publish:
   stage: deploy
