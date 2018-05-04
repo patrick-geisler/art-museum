@@ -20,7 +20,5 @@ build:
     - apt-get install -y heroku-toolbelt
     - export HEROKU_API_KEY=HEROKU_API_KEY
     - git push https://heroku:$HEROKU_API_KEY@git.heroku.com/museum-art.git master
-    - heroku git:remote -a museum-art
-    - git push heroku master
   only:
     - master
