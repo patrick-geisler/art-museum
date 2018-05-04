@@ -1,0 +1,15 @@
+{
+  "name": "art",
+  "version": "1.0.0",
+  "description": "Example app using Rijks museum open api.",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Patrick Geisler",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-fetch": "^2.1.2"
+  }
+}
